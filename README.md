@@ -8,6 +8,6 @@ Trim_galore is basicly a script that can automatically make commands to Trim_gal
 Steps for using :
 
 1. set the Trim_galore to the work path
-2. convert the .ipynb to .py by using the 'nbconvert' command
+2. convert the .ipynb to .py by using the 'nbconvert' command or download the ".py" version directly
 3. python Trimgalore_auto <path/to/data> <path/to/output>
 4. check the output path for your trimmed data
