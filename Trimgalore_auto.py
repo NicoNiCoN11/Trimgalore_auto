@@ -1,7 +1,8 @@
 import os
+import sys
 
 
-def Trim_auto(data, output):
+def trim_auto(data, output):
     # data 数据文件的路径
     # output 输出文件的路径
     if data.endswith(".fq_1") and data.replace("_1", "_2") in os.listdir(os.path.dirname(data)):  # 双端测序
@@ -19,10 +20,12 @@ def Trim_auto(data, output):
     print(f"Finish trimming for {data}")
     os.system(cmd)
     print(f"Finish trimming for {data}")  # 打印完成信息
+
+
 # 获取数据目录的路径
-data_dir = sys.argv[1] #命令行第一个参数
+data_dir = sys.argv[1]  # 命令行第一个参数
 # 获取输出目录的路径
-output_dir = sys.argv[2] #命令行第二个参数
+output_dir = sys.argv[2]  # 命令行第二个参数
 # 获取目录下的所有文件名
 file_list = os.listdir(data_dir)
 # 用列表推导式过滤掉格式不对的文件
@@ -36,4 +39,4 @@ for file in data_list:
     base, ext = os.path.splitext(file)
     # 生成输出文件的路径
     output = os.path.join(output_dir, base + "_trimmed" + ext)
-    Trim_auto(data, output)
+    trim_auto(data, output)
