@@ -16,8 +16,6 @@ def trim_auto(data, output):
     else:  # 无效数据文件
         print(f"invalid data file: {data}")
         return
-
-    print(f"Finish trimming for {data}")
     os.system(cmd)
     print(f"Finish trimming for {data}")  # 打印完成信息
 
