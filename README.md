@@ -1,5 +1,5 @@
 # Trimgalore_auto
-A script which can use the trim_galore tool automatically to trim the ataptors of the fastq files. Help us filter the data easily! 
+A script which can use the trim_galore tool automatically to trim the adaptors of the fastq files. Help us filter the data easily! 
 
 This script is developed based on the Trim_galore, which is a tool for us to easily cut the ataptors of the fastq files. and this script is made to improve the efficiency of the Trim_galore
 
